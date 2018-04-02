@@ -1,0 +1,102 @@
+#include <cstdlib>
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+class Math
+{
+    public:
+    virtual ~Math() {}
+    virtual double result() = 0;
+    void output()
+    {
+        cout << result;
+    }
+};
+
+class Math : Constant
+{
+    double result(a)
+    {
+        return a;
+    }
+};
+
+class Math : Variable
+{
+    double result(a)
+    {
+        return a;
+    }
+};
+
+class Math : Sum
+{
+    double result(a,b)
+    {
+        return a + b;
+    }
+};
+
+class Math : Substract
+{
+    double result(a,b)
+    {
+        return a - b;
+    }
+};
+
+class Math : Multiply
+{
+    double result(a,b)
+    {
+        return a * b;
+    }
+};
+
+class Math : Divide
+{
+    double result(a,b)
+    {
+        return a / b;
+    }
+};
+
+class Math : Sin
+{
+    double result(a)
+    {
+        return sin(a);
+    }
+};
+
+class Math : Cos
+{
+    double result(a)
+    {
+        return cos(a);
+    }
+};
+
+class Math : Exp
+{
+    double result(a)
+    {
+        return exp(a);
+    }
+};
+
+class Math : Ln
+{
+    double result(a)
+    {
+        return log(a);
+    }
+};
+
+int main()
+{
+
+    return 0;
+}
